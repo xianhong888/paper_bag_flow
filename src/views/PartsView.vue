@@ -4,7 +4,7 @@
       <h2>配件管理</h2>
       <p>五金 / 面料 / 里布 / 包装辅料 · 共 {{ total }} 项</p>
     </div>
-    <button class="btn primary" @click="showForm = true">＋ 新增配件</button>
+    <button v-permission="'part:create'" class="btn primary" @click="showForm = true">＋ 新增配件</button>
   </div>
 
   <div class="toolbar">

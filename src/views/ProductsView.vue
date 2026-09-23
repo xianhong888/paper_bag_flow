@@ -4,7 +4,7 @@
       <h2>商品管理</h2>
       <p>SPU / SKU 主数据 · 共 {{ total }} 款</p>
     </div>
-    <button class="btn primary" @click="showForm = true">＋ 新增商品</button>
+    <button v-permission="'product:create'" class="btn primary" @click="showForm = true">＋ 新增商品</button>
   </div>
 
   <div class="toolbar">

@@ -84,10 +84,19 @@ nav a:first-of-type {
 }
 </style> -->
 
-<template>
+<!-- <template>
   <AdminLayout />
 </template>
 
 <script setup lang="ts">
 import AdminLayout from '@/layouts/AdminLayout.vue'
+</script> -->
+
+
+<template>
+  <RouterView />
+</template>
+
+<script setup lang="ts">
+import { RouterView } from 'vue-router'
 </script>
